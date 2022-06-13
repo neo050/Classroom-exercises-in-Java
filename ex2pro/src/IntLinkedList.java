@@ -47,22 +47,24 @@ public class IntLinkedList {
         return null;
     }
 
-    public boolean remove(Node remove) {
-        if (remove == head) {
+    public boolean remove(Node remove)
+    {
+        if (remove == head)
+        {
             head = head.getnext();
             return true;
         }
         if (find(remove.getval()) != null) ;
         {
             Node temp = head;
-            while (temp.hasnext()) {
+            while (temp.hasnext()&&temp.getnext().hasnext())
+            {
 
                 if (temp.getnext() == remove) {
-                    temp = temp.getnext().getnext();
+                    temp.next = temp.getnext().getnext();
                     return true;
-                } else {
-                    temp = temp.getnext();
                 }
+                temp = temp.getnext();
 
             }
 
@@ -115,7 +117,7 @@ public class IntLinkedList {
             i++;
         }
 
-
+        myIntLinkedList.remove( myIntLinkedList.find(990));
         myIntLinkedList.print();
 
     }
