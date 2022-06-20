@@ -17,6 +17,7 @@ public class Horse implements Runnable{
 
         while (distanse>0)
         {
+            distanse-=  rand.nextInt(1,11);
             try {
                 Thread.sleep(1000);
             }
@@ -24,7 +25,7 @@ public class Horse implements Runnable{
             {
 
             }
-            distanse-=  rand.nextInt(1,11);
+
         }
 
         f.arrive(this);

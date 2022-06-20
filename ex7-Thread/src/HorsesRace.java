@@ -4,7 +4,7 @@ import java.time.LocalTime;
 public class HorsesRace {
     public static void main(String []args )
     {
-        FinishingLine f=new FinishingLine();
+        FinishingLine f=FinishingLine.getInstance();
         Thread mythread[]=new Thread[10];
       for (int i =0 ;i<mythread.length;++i)
       {
@@ -14,11 +14,14 @@ public class HorsesRace {
       for (Thread OP:mythread)
           OP.start();
 
+
         for(Thread op: mythread)
       {
           try
           {
               op.join();
+
+
           }
           catch ( InterruptedException k)
           {
@@ -26,7 +29,7 @@ public class HorsesRace {
           }
       }
       System.out.println("The race is over in:"+LocalTime.now());
-
+        System.out.println("The winner is :"+ f.getWinner().getId());
     }
 
 }
