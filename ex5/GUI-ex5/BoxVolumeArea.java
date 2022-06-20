@@ -58,6 +58,9 @@ public class BoxVolumeArea extends JFrame {
                     lengthinput.setText("");
                     pack();
                 }catch (Exception O) {
+                    Widthinput.setText("");
+                    Heightinput.setText("");
+                    lengthinput.setText("");
                 }
 
 

@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/ex2/ex2_cod/ex2_cod.iml" filepath="$PROJECT_DIR$/.idea/ex2/ex2_cod/ex2_cod.iml" />
       <module fileurl="file://$PROJECT_DIR$/ex2pro/ex2pro.iml" filepath="$PROJECT_DIR$/ex2pro/ex2pro.iml" />
       <module fileurl="file://$PROJECT_DIR$/ex3/ex3.iml" filepath="$PROJECT_DIR$/ex3/ex3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ex7-Thread/ex7-Thread.iml" filepath="$PROJECT_DIR$/ex7-Thread/ex7-Thread.iml" />
     </modules>
   </component>
 </project>
