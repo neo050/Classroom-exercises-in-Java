@@ -33,7 +33,6 @@ public class FinishingLine {
             System.out.println(h.getId()+" Finish the race on the spot:"+numintherace +" Finish the race at "+LocalTime.now());
         }
 
-
     }
     public Horse getWinner()
     {
